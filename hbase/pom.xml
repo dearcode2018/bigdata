@@ -1,33 +1,18 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.hua</groupId>
-  <artifactId>bigdata-entire</artifactId>
-  <version>0.0.1</version>
-  <packaging>pom</packaging>
-  <name>bigdata-entire</name>
-  <description>template Maven Entire Project</description>
-  
-  	<!-- 模块-子项目 -->
-	<modules>
-		<!-- 模板 -->
-		<module>bigdata-template</module>		
-		<module>bigdata-core</module>		
-		<module>flume</module>		
-		<module>hadoop</module>		
-		<module>hbase</module>		
-		<module>hive</module>		
-		<module>spark</module>	
-		<module>storm</module>						
-		<!--
-		<module></module>		
-		<module></module>		
-		<module></module>		
-		<module></module>	
-		-->
-	</modules>
- 
-	<!-- 公共属性 -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.hua</groupId>
+		<artifactId>bigdata-entire</artifactId>
+		<version>0.0.1</version>
+	</parent>	
+	<artifactId>hbase</artifactId>
+	<packaging>jar</packaging>
+	<name>hbase</name>
 	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		
+		<bigdata.core.version>0.0.1</bigdata.core.version>
 		<jdk.version>1.8</jdk.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.version>0.0.1</maven.version>
@@ -37,11 +22,10 @@
 		<maven.plugin.assembly.version>2.5.5</maven.plugin.assembly.version>
 		<maven.plugin.resources.version>2.7</maven.plugin.resources.version>
 		<maven.plugin.dependency.version>2.10</maven.plugin.dependency.version>
-		<maven.plugin.war.version>3.0</maven.plugin.war.version>
-	</properties>  
-  
-  
- 	<!-- 公共构建 -->
+		<maven.plugin.war.version>3.0</maven.plugin.war.version>		
+	</properties>
+
+<!-- 公共构建 -->
 	<build>
 		<plugins>
 
@@ -141,5 +125,14 @@
 
 		</plugins>
 	</build>
-	
+
+	<dependencies>
+		<dependency>
+			<groupId>com.hua</groupId>
+			<artifactId>bigdata-core</artifactId>
+			<version>${bigdata.core.version}</version>
+		</dependency>
+		
+	</dependencies>
+
 </project>
