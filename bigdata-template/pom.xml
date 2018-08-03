@@ -13,7 +13,6 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		
 		<bigdata.core.version>0.0.1</bigdata.core.version>
-		<jdk.version>1.8</jdk.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.version>0.0.1</maven.version>
 		<maven.plugin.compiler.version>3.3</maven.plugin.compiler.version>
