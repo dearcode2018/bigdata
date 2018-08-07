@@ -23,6 +23,7 @@
 		<maven.plugin.resources.version>2.7</maven.plugin.resources.version>
 		<maven.plugin.dependency.version>2.10</maven.plugin.dependency.version>
 		<maven.plugin.war.version>3.0</maven.plugin.war.version>		
+		<storm.version>1.2.2</storm.version>
 	</properties>
 
 <!-- 公共构建 -->
@@ -123,6 +124,19 @@
 				</configuration>
 			</plugin>
 
+		<!-- 打包 -->
+		<plugin>
+			<artifactId>maven-assembly-plugin</artifactId>
+			<configuration>
+				<descriptorRefs>jar-with-dependencies</descriptorRefs>
+				<archive>
+					<manifest>
+						<mainClass>com.hua.storm.StormStarter</mainClass>
+					</manifest>
+				</archive>
+			</configuration>
+		</plugin>
+
 		</plugins>
 	</build>
 
@@ -131,6 +145,13 @@
 			<groupId>com.hua</groupId>
 			<artifactId>bigdata-core</artifactId>
 			<version>${bigdata.core.version}</version>
+		</dependency>
+
+		<dependency>
+		    <groupId>org.apache.storm</groupId>
+		    <artifactId>storm-core</artifactId>
+		    <version>${storm.version}</version>
+		    <scope>provided</scope>
 		</dependency>
 		
 	</dependencies>

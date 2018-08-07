@@ -1,0 +1,32 @@
+Apache Storm Manual
+
+1.本地模式
+引入 storm-core的依赖，运行main方法可以直接运行一个storm处理实例.
+本地模式，一般在开发模式下进行.
+
+2.集群
+本地模式开发好的应用程序，打jar包之后，放在storm集群中运行.
+运行方式: $STORM_HOME/bin storm jar xx.jar Main程序路径(main方法) main方法参数
+实例: storm jar abc.jar com.hua.storm.App hehe
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

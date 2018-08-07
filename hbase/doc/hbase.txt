@@ -1,0 +1,27 @@
+Apache HBase
+
+简介
+基于Hadoop的，称为Apache Hadoop Database.
+支持分布式计算(MapReduce)、分布式存储(HDFS)、稳定服务(Zookeeper)的面向列的数据库.
+官方描述: Apache HBase是基于Hadoop构建的一个分布式的、可伸缩的海量数据存储系统。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
