@@ -1,0 +1,35 @@
+Apache Flume
+
+https://www.cnblogs.com/zhangyinhua/p/7803486.html
+
+https://blog.csdn.net/oxuzhenyi/article/details/72188559
+
+
+简介
+flume是cloudera开发的实时日志收集系统，受到业界广泛许可和应用.flume初始发行版本为Flume OG(original generation)，属于cloudera.
+随着flume功能扩展，OG代码工程臃肿、核心组件设计不合理、核心配置不标准等缺点暴露出来. 为了解决这些问题，cloudera对flume进行了
+重构，重构后版本称为Flume NG(next generation 下一代)，并将之纳入Apache旗下.
+
+flume是一个分布式、可靠、高可用的海量日志采集、聚合、传输系. 支持在日志中定制各类数据发送方，用于收集数据；同时，flume提供对
+数据进行简单处理，并写到各种数据接受方(文本、HDFS、HBASE等)的能力.
+flume的数据流由事件贯穿始终，事件是flume的基本数据单位。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

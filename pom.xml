@@ -13,6 +13,7 @@
 		<module>bigdata-template</module>		
 		<module>bigdata-core</module>		
 		<module>flume</module>		
+		<module>flume-es</module>
 		<module>hadoop</module>		
 		<module>hbase</module>		
 		<module>hive</module>		
